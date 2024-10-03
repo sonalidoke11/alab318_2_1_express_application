@@ -1,0 +1,22 @@
+html 
+    head 
+        title='Tours & Packages'
+        link(rel="stylesheet", href="style.css")
+    body 
+        h1='ABC Tours'
+        a(href='/packages') Packages |
+        h2
+            p='Details of package 1'
+        p= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi officia cum veritatis quidem cupiditate quia molestias enim et perspiciatis, aperiam, deserunt delectus. Iste voluptates sit nemo impedit incidunt eos placeat.'
+
+        h1 Form
+        form(action="/submit-form" method="POST")
+            label(for="name") Name:
+                input(type="text" name="name" id="name" required)
+            br
+            label(for="email") Email:
+                input(type="email" name="email" id="email" required)
+            br
+            label(for="packageId") 
+                input(type="hidden" name="packageId" id="site-1" value="site-1")
+            button(type="submit") Submit
